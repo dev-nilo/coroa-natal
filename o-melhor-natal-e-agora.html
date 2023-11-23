@@ -10,36 +10,35 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="./images/coroa-favicon.png" />
-    <link rel="apple-touch-icon" href="./images/coroa-favicon-57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./images/coroa-favicon-72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="./images/coroa-favicon-114.png" />
+    <link rel="shortcut icon" href="./assets/images/coroa-favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/images/coroa-favicon-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/coroa-favicon-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/coroa-favicon-114.png" />
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="css/bootsnav.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-icons.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootsnav.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/theme-vendors.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
   </head>
   <body>
     <!-- header -->
     <header>
-      <nav
-        class="navbar navbar-default bootsnav navbar-fixed-top header-light background-transparent white-link navbar-expand-lg"
-      >
+      <nav class="navbar navbar-default bootsnav navbar-fixed-top header-light background-transparent white-link navbar-expand-lg">
         <div class="container-lg nav-header-container">
           <!-- logo -->
           <div class="col-auto ps-0">
-            <a href="index.html" title="Natal-Coroa" class="logo">
+            <a href="#home" title="Natal-Coroa" class="logo">
               <img
-                src="images/coroa-logo.png"
-                data-at2x="images/coroa-logo@2x.png"
+                src="./assets/images/coroa-logo.png"
+                data-at2x="./assets/images/coroa-logo@2x.png"
                 class="logo-dark"
                 alt="Logo da Coroa"
               />
               <img
-                src="images/coroa-logo.png"
-                data-at2x="images/coroa-logo@2x.png"
+                src="./assets/images/coroa-logo.png"
+                data-at2x="./assets/images/coroa-logo@2x.png"
                 alt="Logo da Coroa"
                 class="logo-light default"
               />
@@ -58,25 +57,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <div
-              class="navbar-collapse collapse justify-content-end"
-              id="navbar-collapse-toggle-1"
-            >
+            <div class="navbar-collapse collapse justify-content-end" id="navbar-collapse-toggle-1" >
               <ul class="nav navbar-nav alt-font font-weight-700">
-                <li>
-                  <a href="#home" title="Home" class="inner-link">Home</a>
-                </li>
-                <li>
-                  <a href="#sobre" title="Sobre" class="inner-link">Sobre</a>
-                </li>
-                <li>
-                  <a href="#galeria" title="Galeria" class="inner-link"
-                    >Galeria</a
-                  >
-                </li>
-                <li>
-                  <a href="#agenda" title="Agenda" class="inner-link">Agenda</a>
-                </li>
+                <li><a href="#sobre" title="A Campanha" class="inner-link">A Campanha</a></li>
+                <li><a href="#counter" title="Counter" class="inner-link">Início</a></li>
+                <li><a href="#galeria" title="Galeria" class="inner-link">Galeria</a></li>
+                <li><a href="#countdown" title="Countdown" class="inner-link">A Caravana</a></li>
               </ul>
             </div>
           </div>
@@ -85,22 +71,16 @@
     </header>
     <!-- start slider section -->
     <section id="home" class="p-0 full-screen fit-videos position-relative">
-      <div class="opacity-extra-medium bg-extra-dark-gray"></div>
+      <div class="opacity-extra-medium bg-white2"></div>
       <div class="container position-relative full-screen">
         <div class="row h-100 align-items-center">
           <div class="col-12 col-lg-8 col-sm-9 text-center mx-auto">
-            <span
-              class="text-medium margin-20px-bottom d-block alt-font text-extra-light-gray"
-              >O grupo Coroa apresenta:</span
-            >
-            <h1 class="alt-font text-white-2 font-weight-400 christmas-font">
-              O Melhor Natal é Agora
-            </h1>
+            <img src="./assets/images/campanha/logo-campanha-fullwhite.png" alt="O melhor natal é agora" class="img"w>
           </div>
           <div class="down-section text-center">
             <a href="#sobre" class="inner-link">
               <i
-                class="ti-arrow-down icon-extra-small text-white-2 bg-deep-pink padding-15px-all sm-padding-15px-all rounded-circle"
+                class="ti-arrow-down icon-extra-small text-white2 bg-deep-pink padding-15px-all sm-padding-15px-all rounded-circle"
               ></i>
             </a>
           </div>
@@ -113,86 +93,97 @@
         controls=""
         muted
         class="htms-video"
-        poster="https://via.placeholder.com/1920x1280"
-      >
-        <source type="video/mp4" src="video/video.mp4" />
-        <source type="video/ogg" src="video/video.ogg" />
-        <source type="video/webm" src="video/video.webm" />
+        poster="./assets/images/ILS_1997.jpg">
+        <source type="video/mp4" src="./assets/video/video.mp4" />
       </video>
     </section>
     <!-- a campanha -->
-    <section class="wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
-      <div class="container"> 
+    <section id="sobre" class="bg-christmas">
+      <div class="container wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;"> 
           <div class="row align-items-center">
               <div class="col-12 col-xl-3 col-sm-6 text-center xs-margin-15px-bottom wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                  <img src="https://via.placeholder.com/600x909" alt="" class="w-100" data-no-retina="">
+                  <img src="./assets/images/2022/ILS_1428.png" alt="" class="w-100" data-no-retina="">
               </div>
               <div class="col-12 col-xl-3 col-sm-6 text-center wow animate__fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                  <img src="https://via.placeholder.com/600x909" alt="" class="w-100" data-no-retina="">
+                  <img src="./assets/images/2022/2.png" alt="" class="w-100" data-no-retina="">
               </div>
-              <div class="col-12 col-xl-6 p-0 lg-margin-five-top text-center text-lg-start sm-no-margin-top wow animate__fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+              <div class="col-12 col-xl-6 p-0 lg-margin-five-top text-center text-lg-start sm-no-margin-top wow animate__fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;";">
                   <div class="padding-twelve-lr lg-padding-15px-lr sm-padding-five-lr sm-padding-ten-top w-100">
-                      <h4 class="font-weight-600 alt-font text-extra-dark-gray letter-spacing-minus-1">We combine design, thinking and craft.</h4>
-                      <p class="text-extra-large alt-font font-weight-400">We always stay with our clients and respect their business. We deliver 100% and provide instant response.</p>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry. Lorem Ipsum has been the industry's standard dummy text since.</p>
+                      <h5 class="font-weight-600 alt-font text-deep-pink letter-spacing-minus-1">O melhor momento!</h5>
+                      <p class="text-extra-large alt-font font-weight-400">O Natal é o momento que esperamos o ano todo. É celebração de amor ao próximo e solidariedade.</p>
+                      <p>Valores que se renovam nesta época e que devemos praticar sempre em nossos momentos diários. Afinal, que momento melhor para amar do que agora? Cada momento é único e deve ser vivenciado com o melhor de nós, sempre. Bora com a gente nessa caravana?</p>
                   </div>
               </div>
           </div>
       </div>
     </section>
-    <!-- countdown -->
-    <section class="wow animate__fadeIn bg-light-gray">
-      <div class="container position-relative">
-        <div class="row justify-content-center">
-          <div
-            class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom"
-          >
-            <div class="position-relative overflow-hidden w-100">
-              <span class="text-small alt-font font-weight-600 text-uppercase"
-                >Nossa Campanha começa em</span
-              >
-            </div>
+    <!-- counter -->
+    <section id="counter" class="bg-christmas">
+      <div class="container wow animate__fadeIn">
+          <div class="row justify-content-center">
+              <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
+                  <div class="position-relative overflow-hidden w-100">
+                      <h5 class="alt-font font-weight-700 text-deep-pink text-uppercase margin-15px-bottom">Doações Realizadas</h5>
+                      <p class="mb-0">Retorne aqui para ver o número aumentando!</p>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <!-- start timer -->
-          <div class="col-12">
-            <div
-              data-enddate="2023/12/25 12:00:00"
-              class="countdown text-center counter-box-3"
-            ></div>
-            <!-- end timer -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+              <!-- counter box item -->
+              <div class="col text-sm-center md-margin-60px-bottom md-padding-ten-left sm-margin-40px-bottom sm-padding-15px-left wow animate__fadeInDown">
+                  <i class="fas fa-fill icon-medium float-start text-white2"></i>
+                  <div class="float-start padding-nine-left">
+                      <h5 class="text-white2 font-weight-300 margin-three-bottom counter" data-to="0" data-speed="2000">0</h5>
+                      <span class="text-small text-white2 text-uppercase d-block">Coroinhas</span>
+                      <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
+                  </div>
+              </div>
+              <!-- counter box item -->
+              <div class="col text-sm-center md-padding-ten-left sm-padding-15px-left xs-margin-40px-bottom wow animate__fadeInDown" data-wow-delay="0.2s">
+                  <i class="fas fa-gift icon-medium float-start text-white2"></i>
+                  <div class="float-start padding-nine-left">
+                      <h5 class="text-white2 font-weight-300 margin-three-bottom counter" data-to="0" data-speed="2000">0</h5>
+                      <span class="text-small text-white2 text-uppercase d-block">Presentes</span>
+                      <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
+                  </div>
+              </div>
+              <!-- counter box item -->
+              <div class="col text-sm-center md-padding-ten-left sm-padding-15px-left xs-margin-40px-bottom wow animate__fadeInDown" data-wow-delay="0.4s">
+                  <i class="fas fa-shopping-basket icon-medium float-start text-white2"></i>
+                  <div class="float-start padding-nine-left">
+                      <h5 class="text-white2 font-weight-300 margin-three-bottom counter" data-to="0" data-speed="2000">0</h5>
+                      <span class="text-small text-white2 text-uppercase d-block">Cestas Básicas</span>
+                      <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
+                  </div>
+              </div>
+              <!-- counter box item -->
+              <div class="col text-sm-center md-padding-ten-left sm-padding-15px-left xs-margin-40px-bottom wow animate__fadeInDown" data-wow-delay="0.6s">
+                <i class="far fa-laugh-beam icon-medium float-start text-white2"></i>
+                <div class="float-start padding-nine-left">
+                  <h5 class="text-white2 font-weight-300 margin-three-bottom counter" data-to="0" data-speed="2000">0</h5>
+                  <span class="text-small text-white2 text-uppercase d-block">Crianças Atendidas</span>
+                  <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
+                </div>
+              </div>
           </div>
-        </div>
       </div>
     </section>
     <!-- galeria -->
-    <section id="galeria" class="pb-0 wow animate__fadeIn">
-      <div class="container">
+    <section id="galeria" class="pb-0 bg-christmas">
+      <div class="container wow animate__fadeIn">
         <div class="row justify-content-center">
           <div
-            class="col-12 col-lg-6 col-md-8 col-sm-10 margin-eight-bottom text-center last-paragraph-no-margin md-margin-40px-bottom sm-margin-30px-bottom"
-          >
-            <h5
-              class="alt-font font-weight-700 text-extra-dark-gray text-uppercase margin-15px-bottom"
-            >
-              galeria da campanha
-            </h5>
-            <p class="mb-0">
-              We are idea-driven, working with a strong focus on design and user
-              experience. Our projects should engage your audience.
-            </p>
+            class="col-12 col-lg-6 col-md-8 col-sm-10 margin-eight-bottom text-center last-paragraph-no-margin md-margin-40px-bottom sm-margin-30px-bottom">
+            <h5 class="alt-font font-weight-700 text-deep-pink text-uppercase margin-15px-bottom">Natal Coroa</h5>
+            <p class="mb-0">Confira um pouquinho de como foi o nosso natal no ano passado.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
             <!-- start filter navigation -->
-            <ul
-              class="portfolio-filter nav nav-tabs justify-content-center border-0 portfolio-filter-tab-1 font-weight-600 alt-font text-uppercase text-center margin-80px-bottom text-small md-margin-40px-bottom sm-margin-20px-bottom"
-            >
+            <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 portfolio-filter-tab-1 font-weight-600 alt-font text-uppercase text-center margin-80px-bottom text-small md-margin-40px-bottom sm-margin-20px-bottom">
               <li class="nav">
-                <a
-                  href="javascript:void(0);"
+                <a href="javascript:void(0);"
                   data-filter=".2022"
                   class="light-gray-text-link text-very-small"
                   >2022</a
@@ -213,347 +204,184 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 filter-content overflow-hidden">
-            <ul
-              class="hover-option7 portfolio-wrapper grid grid-loading grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-small"
-            >
+            <ul class="hover-option6 portfolio-wrapper grid grid-loading grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-small">
               <li class="grid-sizer"></li>
               <!-- start portfolio-item item -->
-              <li class="grid-item web branding design wow animate__fadeInUp">
-                <a href="single-project-page-03.html">
+              <li class="grid-item 2022 wow animate__fadeInUp">
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/01.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >Herbal Beauty Salon</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Branding and Identity
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
               <!-- start portfolio item -->
-              <li
-                class="grid-item web branding design photography wow animate__fadeInUp"
-                data-wow-delay="0.4s"
-              >
-                <a href="single-project-page-04.html">
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="0.2s"  >
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/02.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >Tailoring Interior</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Branding and Brochure
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
               <!-- start portfolio item -->
-              <li
-                class="grid-item advertising branding photography wow animate__fadeInUp"
-                data-wow-delay="0.4s"
-              >
-                <a href="single-project-page-05.html">
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="0.4s">
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/03.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >Pixflow Studio</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Branding and Identity
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
               <!-- start portfolio item -->
-              <li
-                class="grid-item web advertising design wow animate__fadeInUp"
-                data-wow-delay="0.6s"
-              >
-                <a href="single-project-page-01.html">
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="0.6s">
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/04.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >Designblast Inc</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Web and Photography
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
               <!-- start portfolio item -->
-              <li class="grid-item web branding design wow animate__fadeInUp">
-                <a href="single-project-page-02.html">
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="0.8s">
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/05.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >HardDot Stone</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Branding and Identity
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
               <!-- start portfolio item -->
-              <li
-                class="grid-item web advertising branding design photography wow animate__fadeInUp"
-                data-wow-delay="0.2s"
-              >
-                <a href="single-project-page-03.html">
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="1.0s">
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/06.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >Educamp School</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Branding and Identity
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
               <!-- start portfolio item -->
-              <li
-                class="grid-item web advertising branding design photography wow animate__fadeInUp"
-                data-wow-delay="0.4s"
-              >
-                <a href="single-project-page-04.html">
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="1.2s">
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/07.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >Third Eye Glasses</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Branding and Brochure
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
               <!-- start portfolio item -->
-              <li
-                class="grid-item web advertising branding design wow animate__fadeInUp"
-                data-wow-delay="0.6s"
-              >
-                <a href="single-project-page-05.html">
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="1.4s">
                   <figure>
                     <div class="portfolio-img">
-                      <img src="https://via.placeholder.com/800x650" alt="" />
+                      <img src="./assets/images/2022/08.jpg" alt="" />
                     </div>
-                    <figcaption>
-                      <div
-                        class="portfolio-hover-main text-center last-paragraph-no-margin"
-                      >
-                        <div class="portfolio-hover-box align-middle">
-                          <div
-                            class="portfolio-hover-content position-relative"
-                          >
-                            <span
-                              class="font-weight-600 alt-font text-uppercase margin-one-bottom d-block text-extra-dark-gray"
-                              >Violator Series</span
-                            >
-                            <p
-                              class="text-medium-gray text-uppercase text-extra-small"
-                            >
-                              Web and Photography
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
                   </figure>
-                </a>
               </li>
-              <!-- end portfolio item -->
+              <!-- start portfolio item -->
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="1.6s">
+                  <figure>
+                    <div class="portfolio-img">
+                      <img src="./assets/images/2022/09.jpg" alt="" />
+                    </div>
+                  </figure>
+              </li>
+              <!-- start portfolio item -->
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="1.8s">
+                  <figure>
+                    <div class="portfolio-img">
+                      <img src="./assets/images/2022/10.jpg" alt="" />
+                    </div>
+                  </figure>
+              </li>
+              <!-- start portfolio item -->
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="2s">
+                  <figure>
+                    <div class="portfolio-img">
+                      <img src="./assets/images/2022/11.jpg" alt="" />
+                    </div>
+                  </figure>
+              </li>
+              <!-- start portfolio item -->
+              <li class="grid-item 2022 wow animate__fadeInUp" data-wow-delay="2.2s">
+                  <figure>
+                    <div class="portfolio-img">
+                      <img src="./assets/images/2022/12.jpg" alt="" />
+                    </div>
+                  </figure>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- counter -->
-    <section class="wow animate__fadeIn bg-light-gray">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
-                  <div class="position-relative overflow-hidden w-100">
-                      <span class="text-small alt-font font-weight-600 text-uppercase">Doações Realizadas</span>
-                  </div>
-              </div>
+    <!-- countdown -->
+    <section id="countdown" class="bg-christmas">
+      <div class="container position-relative wow animate__fadeIn">
+        <div class="row justify-content-center">
+          <div
+            class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom"
+          >
+            <div class="position-relative overflow-hidden w-100">
+              <h5 class="alt-font font-weight-700 text-deep-pink text-uppercase margin-15px-bottom">a CARAVANA O MELHOR NATAL É AGORA começa em</h5>
+            </div>
           </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
-              <!-- counter box item -->
-              <div class="col text-sm-center md-margin-60px-bottom md-padding-ten-left sm-margin-40px-bottom sm-padding-15px-left wow animate__fadeInDown">
-                  <i class="icon-happy icon-medium float-start text-medium-gray"></i>
-                  <div class="float-start padding-nine-left">
-                      <h5 class="text-extra-dark-gray font-weight-300 margin-three-bottom counter" data-to="8001" data-speed="2000">8001</h5>
-                      <span class="text-small text-medium-gray text-uppercase d-block">Coroinhas</span>
-                      <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
-                  </div>
-              </div>
-              <!-- counter box item -->
-              <div class="col text-sm-center md-margin-60px-bottom md-padding-ten-left sm-margin-40px-bottom sm-padding-15px-left wow animate__fadeInDown" data-wow-delay="0.2s">
-                  <i class="icon-layers icon-medium float-start text-medium-gray"></i>
-                  <div class="float-start padding-nine-left">
-                      <h5 class="text-extra-dark-gray font-weight-300 margin-three-bottom counter" data-to="987" data-speed="2000">987</h5>
-                      <span class="text-small text-medium-gray text-uppercase d-block">Presentes</span>
-                      <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
-                  </div>
-              </div>
-              <!-- counter box item -->
-              <div class="col text-sm-center md-padding-ten-left sm-padding-15px-left xs-margin-40px-bottom wow animate__fadeInDown" data-wow-delay="0.4s">
-                  <i class="icon-global icon-medium float-start text-medium-gray"></i>
-                  <div class="float-start padding-nine-left">
-                      <h5 class="text-extra-dark-gray font-weight-300 margin-three-bottom counter" data-to="350" data-speed="2000">350</h5>
-                      <span class="text-small text-medium-gray text-uppercase d-block">Cestas Básicas</span>
-                      <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
-                  </div>
-              </div>
-              <!-- counter box item -->
-              <div class="col md-padding-ten-left sm-padding-15px-left wow animate__fadeInDown" data-wow-delay="0.6s">
-                  <i class="icon-chat icon-medium float-start text-medium-gray"></i>
-                  <div class="float-start padding-nine-left">
-                      <h5 class="text-extra-dark-gray font-weight-300 margin-three-bottom counter" data-to="850" data-speed="2000">850</h5>
-                      <span class="text-small text-medium-gray text-uppercase d-block">Crianças Atendidas</span>
-                      <div class="separator-line-horrizontal-medium-light2 bg-deep-pink d-inline-block"></div>
-                  </div>
-              </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- start timer -->
+          <div class="col-12">
+            <div
+              data-enddate="2023/12/18 12:00:00"
+              class="countdown text-center counter-box-3"
+            ></div>
+            <!-- end timer -->
           </div>
+        </div>
       </div>
     </section>
+    <section class="bg-christmas">
+            <div class="container wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <!-- start accordion -->
+                        <div class="panel-group accordion-event accordion-style3" id="accordion-3" data-active-icon="fa-angle-up" data-inactive-icon="fa-angle-down">
+                            <!-- start tab content -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <span class="alt-font font-weight-600 text-deep-pink tab-tag">15/12</span>
+                                            <span class="text-white2 sm-w-80 d-inline-block">18h Cariacica (Praça Cariacica Sede) e 20h30 Serra (Parque da cidade)</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- start tab content -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <span class="alt-font font-weight-600 text-deep-pink tab-tag">16/12</span>
+                                            <span class="text-white2 sm-w-80 d-inline-block">17h30 Vila Velha (Prainha) e 20h Guarapari (Praia do Morro)</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- start tab content -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <span class="alt-font font-weight-600 text-deep-pink tab-tag">17/12</span>
+                                            <span class="text-white2 sm-w-80 d-inline-block">18h Vitória (ida pelo centro) – Praça dos Namorados, (volta pela Serafim Derenzi) – 20h Prainha de Stº Antônio</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                        </div>
+                        <!-- end accordion -->
+                    </div>
+                </div>
+            </div>
+    </section>
     <!-- footer -->
-    <footer class="footer-strip-dark padding-90px-tb lg-padding-90px-tb md-padding-50px-tb sm-padding-40px-tb">
+    <footer class="footer-strip-dark padding-90px-tb lg-padding-90px-tb md-padding-50px-tb sm-padding-40px-tb bg-christmas">
       <div class="container">
         <div class="row align-items-center">
             <!-- start logo -->
             <div class="col-lg-2 col-md-2 text-center md-margin-50px-bottom sm-margin-30px-bottom text-md-start">
                 <a href="index.html">
-                  <img class="footer-logo" src="images/coroa-logo.png" alt="Logo da Coroa">
+                  <img class="footer-logo" src="./assets/images/coroa-logo.png" alt="Logo da Coroa">
                 </a>
             </div>
             <!-- start copyright -->
@@ -610,12 +438,12 @@
     <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
     <!-- end scroll to top  -->
     <!-- javascript -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootsnav.js"></script>
-    <script type="text/javascript" src="js/jquery.nav.js"></script>
-    <script type="text/javascript" src="js/hamburger-menu.js"></script>
-    <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootsnav.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="./assets/js/hamburger-menu.js"></script>
+    <script type="text/javascript" src="./assets/js/theme-vendors.min.js"></script>
     <!-- setting -->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
