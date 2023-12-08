@@ -1,3 +1,4 @@
+<<<<<<< HEAD:assets/css/custom.css
 input[type="file"] {
       display: none;
 }
@@ -56,4 +57,41 @@ label:hover{
       box-sizing: border-box;
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
+=======
+input[type="file"] {
+      display: none;
+}
+
+label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      background-color: #232323;
+      border-color: #232323;
+      color: #fff;
+      padding: 5px 5px;
+      width: 100px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      cursor: pointer;
+}
+
+label:hover{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      background-color: #fff;
+      border: 10px;
+      border-color: #232323;
+      color: #232323;
+      padding: 5px 5px;
+      width: 100px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      cursor: pointer;      
+>>>>>>> 38aaba7501e4aa3bbec24b82df53e2664e43770a:css/custom.css
 }
