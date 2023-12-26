@@ -7,4 +7,3 @@ Build with:
 - Bootstrap;
 - Javascript;
 - JQuery;
-- PHP.
