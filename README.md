@@ -1,4 +1,4 @@
-## 🎅 This the Christmas Website I built for the Company I work for.
+## 🎅 A simple Christmas landing page I built for the Company I work.
 
 Build with:
 
